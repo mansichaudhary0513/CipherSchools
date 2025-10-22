@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.jsx", "../src/Component.jsx"],
+  "sourcesContent": ["import React from 'react';\nimport Greeting from './Component.jsx';\n\nconst App = () => React.createElement('div', null, \n\u00A0 React.createElement('h1', null, 'Web IDE Project \uD83D\uDC4B'),\n\u00A0 React.createElement(Greeting)\n);\n\nconst { createRoot } = ReactDOM;\nconst root = document.getElementById('root');\ncreateRoot(root).render(React.createElement(App));", "import React from 'react';\n\nexport default function Greeting() {\n\u00A0 return React.createElement('h2', {style: {color: 'blue'}}, 'Hello from a separate component!');\n};"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,MAAAA,gBAAkB;;;ACAlB,qBAAkB;AAEH,WAAR,WAA4B;AACjC,WAAO,aAAAC,QAAM,cAAc,MAAM,EAAC,OAAO,EAAC,OAAO,OAAM,EAAC,GAAG,kCAAkC;AAAA,EAC/F;;;ADDA,MAAM,MAAM,MAAM,cAAAC,QAAM;AAAA,IAAc;AAAA,IAAO;AAAA,IAC3C,cAAAA,QAAM,cAAc,MAAM,MAAM,2BAAoB;AAAA,IACpD,cAAAA,QAAM,cAAc,QAAQ;AAAA,EAC9B;AAEA,MAAM,EAAE,WAAW,IAAI;AACvB,MAAM,OAAO,SAAS,eAAe,MAAM;AAC3C,aAAW,IAAI,EAAE,OAAO,cAAAA,QAAM,cAAc,GAAG,CAAC;",
+  "names": ["import_react", "React", "React"]
+}

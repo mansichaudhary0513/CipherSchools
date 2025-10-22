@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.jsx"],
+  "sourcesContent": ["import './App';\nconst { createRoot } = ReactDOM;\nconst root = document.getElementById('root');\ncreateRoot(root).render(React.createElement(App));"],
+  "mappings": ";;AACA,MAAM,EAAE,WAAW,IAAI;AACvB,MAAM,OAAO,SAAS,eAAe,MAAM;AAC3C,aAAW,IAAI,EAAE,OAAO,MAAM,cAAc,GAAG,CAAC;",
+  "names": []
+}

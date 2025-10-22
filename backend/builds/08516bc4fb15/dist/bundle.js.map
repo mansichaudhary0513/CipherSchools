@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.jsx"],
+  "sourcesContent": ["const App = () => <div><h1>Hello from the web IDE \uD83D\uDC4B</h1></div>;\nconst { createRoot } = ReactDOM;\nconst root = document.getElementById('root');\ncreateRoot(root).render(<App />);"],
+  "mappings": ";;AAAA,MAAM,MAAM,MAAM,oCAAC,aAAI,oCAAC,YAAG,kCAAyB,CAAK;AACzD,MAAM,EAAE,WAAW,IAAI;AACvB,MAAM,OAAO,SAAS,eAAe,MAAM;AAC3C,aAAW,IAAI,EAAE,OAAO,oCAAC,SAAI,CAAE;",
+  "names": []
+}

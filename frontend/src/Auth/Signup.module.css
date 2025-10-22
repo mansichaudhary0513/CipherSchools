@@ -1,0 +1,261 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #0d1117;
+  padding: 20px;
+}
+
+.authCard {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.cardHeader {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #58a6ff;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #c9d1d9;
+  margin: 0;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  color: #8b949e;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.inputIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px 16px 12px 48px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: #c9d1d9;
+  font-size: 15px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.inputField::placeholder {
+  color: #6e7681;
+}
+
+.inputField:focus {
+  border-color: #58a6ff;
+  background-color: #0d1117;
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.1);
+}
+
+.message {
+  padding: 12px 16px;
+  background-color: #3c1618;
+  border: 1px solid #da3633;
+  border-radius: 8px;
+  color: #f85149;
+  font-size: 14px;
+  margin-top: -8px;
+}
+
+.authButton {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: #238636;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.authButton:hover:not(:disabled) {
+  background-color: #2ea043;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(35, 134, 54, 0.3);
+}
+
+.authButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.authButton:disabled {
+  background-color: #21262d;
+  color: #6e7681;
+  cursor: not-allowed;
+}
+
+.cardFooter {
+  margin-top: 24px;
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid #30363d;
+}
+
+.cardFooter p {
+  color: #8b949e;
+  font-size: 14px;
+  margin: 0;
+}
+
+.link {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+.successOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(13, 17, 23, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.successBox {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.successIcon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 24px;
+  color: #3fb950;
+  animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.successIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.successTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #c9d1d9;
+  margin: 0 0 12px;
+}
+
+.successMessage {
+  font-size: 15px;
+  color: #8b949e;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .authCard {
+    padding: 32px 24px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .successBox {
+    padding: 40px 32px;
+    margin: 0 20px;
+  }
+
+  .successIcon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .successTitle {
+    font-size: 20px;
+  }
+}

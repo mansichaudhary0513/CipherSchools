@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/Component.jsx", "../src/index.jsx"],
+  "sourcesContent": ["export function ChildComponent({ name }) {\r\nreturn (\r\n<div style={{ padding: '10px', background: '#ffe0b2', borderRadius: '4px' }}>\r\n<h3>Hello, {name}!</h3>\r\n<p>This component was imported from 'Component.jsx'.</p>\r\n</div>\r\n);\r\n}\r\n", "// NOTE: React and ReactDOM are available globally via CDN.\r\nimport { ChildComponent } from './Component.jsx';\r\n\r\nconst App = () => (\r\n<div style={{ fontFamily: 'Inter, sans-serif', padding: '20px', textAlign: 'center' }}>\r\n<h1>Welcome to the React IDE!</h1>\r\n<ChildComponent name=\"World\" />\r\n</div>\r\n);\r\n\r\nconst root = document.getElementById('root');\r\n// Use the global ReactDOM, which the CDN exposes\r\nReactDOM.createRoot(root).render(<App />);"],
+  "mappings": ";;;;;;;;;;;;;;;;AAGA;AAHO,WAAS,eAAe,EAAE,KAAK,GAAG;AACzC,WACA,6CAAC,SAAI,OAAO,EAAE,SAAS,QAAQ,YAAY,WAAW,cAAc,MAAM,GAC1E;AAAA,mDAAC,QAAG;AAAA;AAAA,QAAQ;AAAA,QAAK;AAAA,SAAC;AAAA,MAClB,4CAAC,OAAE,+DAAiD;AAAA,OACpD;AAAA,EAEA;;;ACHA,MAAAA,sBAAA;AADA,MAAM,MAAM,MACZ,8CAAC,SAAI,OAAO,EAAE,YAAY,qBAAqB,SAAS,QAAQ,WAAW,SAAS,GACpF;AAAA,iDAAC,QAAG,uCAAyB;AAAA,IAC7B,6CAAC,kBAAe,MAAK,SAAQ;AAAA,KAC7B;AAGA,MAAM,OAAO,SAAS,eAAe,MAAM;AAE3C,WAAS,WAAW,IAAI,EAAE,OAAO,6CAAC,OAAI,CAAE;",
+  "names": ["import_jsx_runtime"]
+}
